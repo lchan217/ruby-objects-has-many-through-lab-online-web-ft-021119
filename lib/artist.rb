@@ -19,5 +19,8 @@ class Artist
     end 
   end 
   def genres 
+    Song.all.select to |song|
+    binding.pry
+  end 
   end 
 end
