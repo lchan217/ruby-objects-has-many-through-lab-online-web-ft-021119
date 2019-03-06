@@ -10,14 +10,5 @@ class Genre
   def self.all 
     @@all 
   end 
-  def songs 
-    Song.all.select do |song|
-      song.genre == self 
-    end 
-  end 
-  def artists #error: artists has many artists, through songs
-    Artist.all.each do |artist|
-      artist
-    end
-  end
+  
 end 
