@@ -11,15 +11,14 @@ class Genre
     @@all 
   end 
   def songs 
-    Song.all.each do |song|
+    Song.all.select do |song|
       song.genre == self 
     end 
   end 
-  def artists 
+  def artists #error: artists has many artists, through songs
     Song.all.collect do |song|
       if song.genre == self
         song.artist
       end
-    end
-  end 
+    end  end
 end 
