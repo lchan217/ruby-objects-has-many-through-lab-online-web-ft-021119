@@ -20,5 +20,6 @@ class Genre
       if song.genre == self
         song.artist
       end
-    end  end
+    end
+  end
 end 
