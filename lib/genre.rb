@@ -18,5 +18,6 @@ class Genre
   def artists 
     Song.all.each do |song|
       song.artist == genre.artist 
+    end
   end 
 end 
